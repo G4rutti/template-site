@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    font-family: Josefin Sans, sans-serif;
+}
+
+.cabecalho{
+    max-width: 100vw;
+    display: flex;
+    background-color: black;
+    position: fixed;
+}
+
+
+.leftheader{
+    width: 50vw;
+    display: flex;
+    justify-content: left;
+}
+.leftheader h1{
+    color: whitesmoke;
+    font-family: Josefin Sans, sans-serif;
+    font-weight: 700;
+    margin-left: 5vw;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+}
+.leftheader h1:hover{
+    transition-duration: 0.5s;
+    color: #407BFF;
+}
+
+
+.rightheader{
+    font-family: Josefin Sans, Helvetica;
+    width: 50vw;
+    display: flex;
+    justify-content: flex-end;
+}
+.rightheader ul{
+    display: flex;
+    list-style-type: none;
+    padding: 1vw 1vw;
+}
+.rightheader li{
+    padding: 1vw 2vw
+}
+.rightheader a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.rightheader a:hover{
+    color: #407BFF;
+    transition-duration: 0.5s;
+}
+
+.content{
+    max-width: 100vw;
+    height: 200vh;
+}
+.home{
+    display: flex;
+    max-width: 100vw;
+    max-height: 80vh;
+}
+
+
+.maintextr{
+    width: 50vw;
+    height: 80vh;
+}
+.maintextr p{
+    font-weight: 500;
+    padding-top: 20vh;
+    padding-left: 5vw;
+}
+.maintextr button{
+    text-decoration: none;
+    font-weight: 700;
+    outline: none;
+    letter-spacing: 2px;
+    border: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px 0px #2f69e7;
+    background-color: #407BFF;
+    margin-top: 12vh;
+    margin-left: 5vw;
+    padding: 2%;
+}
+.maintextr button:hover{
+    color: whitesmoke;
+    transition-duration: 00.5s;
+}
+
+
+.maintextl{
+    width: 50vw;
+    height: 80vh;
+}
+.imgr{
+    padding-top: 18vh;
+    width: 45vw;
+}
+
+.transicao{
+    width: 100vw;
+    height: 5vh;
+}
+.transicao hr{
+    border: 0px;
+    background-color: #407BFF;
+    margin: 4vh;
+    height: 1vh;
+}
+
+
+.quemsoueu{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+
+.qmtxtl{
+    width: 50vw;
+    height: 100vh;
+}
+.imgl{
+    margin-left: 3vw;
+    width: 90%;
+}
+
+
+.qmtxtr{
+    width: 50vw;
+    height: 100vh;
+}
+.qmtxtr h2{
+    text-align: center;
+    font-weight: 700;
+}
+.qmtxtr p{
+    padding-top: 4vh;
+    margin-right: 1vw;
+    font-weight: 500;
+}
+.things{
+    padding-top: 5vh;
+    padding-left: 0;
+    list-style-type: none;
+}
+.things li{
+    padding-bottom: 0.5vh;
+}
+.things li:hover{
+    color: #407BFF;
+    cursor: pointer;
+    transition-duration: 00.5s;
+}
+
+
+.rodape{
+    font-family: Josefin Sans, sans-serif;
+    font-weight: 400;
+    background-color: black;
+    color: whitesmoke;
+    justify-content: center;
+    width: 100vw;
+}
+.rodape ul{
+    margin: 0;
+    background-color: black;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+.rodape li{
+    padding: 1vw 1vw;
+}
+.rodape a{
+    text-decoration: none;
+}
+.rodape a:hover{
+    transition-duration: 0.5s;
+    color: whitesmoke;
+}
+
+@media screen and (max-width: 750px){
+    .imgl{
+        display: none;
+    }
+    .imgr{
+        display: none;
+    }
+    .maintextl{display:none ;}
+    .maintextr{
+        width: 100vw;
+        height: 80vh;
+        text-align: center;
+    }
+    .maintextr p{
+        padding-left: 0vw;
+    }
+    .maintextr button{
+        margin-left: 0;
+    }
+    .qmtxtl{display: none;}
+    .qmtxtr{
+        padding-right: 0vw;
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+    }
+    .qmtxtr p{
+        margin-right: 0;
+    }
+}
+@media screen and (max-width:510px){
+    .rodape ul{
+        margin: 0;
+        padding: 0;
+        max-width: 100vw;
+        max-height: 10vh;
+    }
+    .rodape li{
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    .leftheader{
+        max-width: 30vw;
+    }
+    .rightheader{
+        width: 70vw;
+    }
+    .rightheader li{
+        padding-top: 5vh;
+    }
+}
